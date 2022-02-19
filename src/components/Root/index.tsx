@@ -1,5 +1,6 @@
 import * as Sentry from '@sentry/react'
-import { theme as styledTheme, Loader } from '@gnosis.pm/safe-react-components'
+import { Loader } from '@gnosis.pm/safe-react-components'
+import aglaiaTheme from 'src/theme/aglaia'
 import { useEffect, useState } from 'react'
 
 import { LoadingContainer } from 'src/components/LoaderContainer'
@@ -75,7 +76,7 @@ const RootConsumer = (): React.ReactElement | null => {
 const Root = (): React.ReactElement => (
   <>
     <LegacyRouteRedirection history={history} />
-    <Providers store={store} history={history} styledTheme={styledTheme} muiTheme={theme}>
+    <Providers store={store} history={history} styledTheme={aglaiaTheme} muiTheme={theme}>
       <Sentry.ErrorBoundary fallback={GlobalErrorBoundary}>
         <RootConsumer />
       </Sentry.ErrorBoundary>

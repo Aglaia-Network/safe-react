@@ -432,7 +432,7 @@ export const OwnerList = styled.ul`
     }
 
     span::first-of-type {
-      color: #008c73;
+      color: #B093F4;
       font-weight: bold;
     }
   }
@@ -514,7 +514,7 @@ export const Centered = styled.div<{ padding?: number }>`
   align-items: center;
 `
 
-export const HorizontallyCentered = styled(Centered)<{ isVisible: boolean }>`
+export const HorizontallyCentered = styled(Centered) <{ isVisible: boolean }>`
   display: ${({ isVisible }) => (isVisible ? 'flex' : 'none')};
   height: 100px;
 `

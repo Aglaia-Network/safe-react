@@ -6,7 +6,7 @@ import { useDispatch } from 'react-redux'
 import GnoButtonLink from 'src/components/layout/ButtonLink'
 import Link from 'src/components/layout/Link'
 import { openCookieBanner } from 'src/logic/cookies/store/actions/openCookieBanner'
-import { screenSm, secondary, sm } from 'src/theme/variables'
+import { screenSm, fancy, sm } from 'src/theme/variables'
 
 const useStyles = makeStyles({
   footer: {
@@ -26,7 +26,7 @@ const useStyles = makeStyles({
     fontSize: '13px',
   },
   link: {
-    color: secondary,
+    color: fancy,
     textDecoration: 'none',
 
     '&:hover': {
@@ -54,7 +54,7 @@ const Footer = (): React.ReactElement => {
 
   return (
     <footer className={classes.footer}>
-      <span className={classes.item}>©{date.getFullYear()} Gnosis</span>
+      <span className={classes.item}>©{date.getFullYear()} Aglaia Network</span>
       <span className={classes.sep}>|</span>
       <Link className={cn(classes.item, classes.link)} target="_blank" to="https://gnosis-safe.io/terms">
         Terms

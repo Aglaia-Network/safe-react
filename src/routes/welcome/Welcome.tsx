@@ -13,14 +13,30 @@ function Welcome(): ReactElement {
     <Page align="center">
       <Block>
         <Title size="md" strong>
-          Welcome to Gnosis Safe.
+          Welcome to Altruism.
         </Title>
         <Title size="xs">
-          Gnosis Safe is the most trusted platform to manage digital assets. <br /> Here is how to get started:
+          Altruism is a <b>decentralized application (dApp)</b> dedicated to Charities and Organizations.<br />It is a <b>multi-signature cryptocurrency interface wallet</b> based on the Gnosis-safe SDK (the most secure multi-signature wallet on the market). <br />The main goal of Altruism dApp is to provide a <b>secure, reliable and easy-to-use</b> interface for Charities and Organizations. <br /><br /> Here is how to get started:
         </Title>
-        <CardsContainer>
+        <Title size="md" strong>
+          Co-built with charities, for charities.
+        </Title>
+        <Title size="xs">
+          With this dApp, you will be able to:
+          <ul>
+            <li>manage and track donation history</li>
+            <li>automatically convert cryptocurrency donations to fiat currency; </li>
+            <li>match transactions with identified donors;</li>
+            <li>generate and send tax receipts;</li>
+          </ul>
+          All of this, <b>with a single click.</b><br /><br />
+          The best part? <b>It's 100% free</b>, and always will be...<br /><br />
+          Start receiving and managing cryptocurrency donations with Altruism now!<br /><br />
+          Start your journey with us: <Link target="_blank" to="https://aglaia.network/">Get certified here</Link>.
+        </Title>
+        {/* <CardsContainer>
           <StyledCard>
-            {/* Create Safe */}
+            
             <CardContentContainer>
               <Title size="sm" strong withoutMargin>
                 Create Safe
@@ -37,7 +53,7 @@ function Welcome(): ReactElement {
             </CardContentContainer>
             <Divider orientation="vertical" flexItem />
             <CardContentContainer>
-              {/* Load Safe */}
+              
               <Title size="sm" strong withoutMargin>
                 Load Existing Safe
               </Title>
@@ -62,9 +78,9 @@ function Welcome(): ReactElement {
               </Button>
             </CardContentContainer>
           </StyledCard>
-        </CardsContainer>
+        </CardsContainer> */}
       </Block>
-    </Page>
+    </Page >
   )
 }
 
